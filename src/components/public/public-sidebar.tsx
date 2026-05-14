@@ -15,6 +15,7 @@ import {
   Sparkles,
   Baby,
   GraduationCap,
+  ShieldCheck,
 } from "lucide-react";
 
 const navItems = [
@@ -28,6 +29,7 @@ const navItems = [
   { label: "الأخبار", href: "/news", icon: Newspaper },
   { label: "التطوع", href: "/volunteer", icon: HandHeart },
   { label: "من نحن", href: "/about", icon: Info },
+  { label: "الحوكمة", href: "/governance", icon: ShieldCheck },
   { label: "التقارير السنوية", href: "/reports", icon: BarChart3 },
   { label: "اتصل بنا", href: "/contact", icon: Phone },
 ];
