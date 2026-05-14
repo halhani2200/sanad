@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/* ====================================================
+   SANAD DESIGN SYSTEM v1.0
+   - Public site: emerald + gold, generous spacing
+   - Admin: zinc neutrals, dense, calm
+   ==================================================== */
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #09090B;
+
+  --brand-50:  #ECFDF5;
+  --brand-100: #D1FAE5;
+  --brand-500: #10B981;
+  --brand-600: #059669;
+  --brand-700: #047857;
+  --brand-800: #065F46;
+  --brand-900: #064E3B;
+
+  --gold-500: #F59E0B;
+  --gold-600: #D97706;
+  --gold-700: #B45309;
+
+  --surface: #FFFFFF;
+  --surface-2: #F4F4F5;
+  --border-1: #E4E4E7;
+  --border-2: #D4D4D8;
+
+  --text-1: #09090B;
+  --text-2: #3F3F46;
+  --text-3: #71717A;
+  --text-4: #A1A1AA;
+}
+
+.dark {
+  --background: #050505;
+  --foreground: #FAFAFA;
+  --surface: #0A0A0A;
+  --surface-2: #18181B;
+  --border-1: #27272A;
+  --border-2: #3F3F46;
+  --text-1: #FAFAFA;
+  --text-2: #D4D4D8;
+  --text-3: #A1A1AA;
+  --text-4: #71717A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --font-arabic: var(--font-arabic);
+}
+
+* { font-family: var(--font-arabic), system-ui, sans-serif; }
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--brand-700);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-1); border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: var(--border-2); }
+
+/* Gradients */
+.gradient-brand {
+  background: linear-gradient(135deg, #064E3B 0%, #047857 50%, #059669 100%);
+}
+.gradient-gold {
+  background: linear-gradient(135deg, #B45309 0%, #D97706 50%, #F59E0B 100%);
+}
+
+.num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+/* Live dot pulse */
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+}
+.live-dot { animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+/* Hijri ribbon shimmer */
+@keyframes ribbon-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.hijri-ribbon {
+  background: linear-gradient(90deg, #FEF3C7 0%, #FDE68A 50%, #FEF3C7 100%);
+  background-size: 200% 100%;
+  animation: ribbon-shimmer 8s ease-in-out infinite;
+  border-bottom: 1px solid #FCD34D;
+}
+.dark .hijri-ribbon {
+  background: linear-gradient(90deg, rgba(120,53,15,0.3) 0%, rgba(146,64,14,0.4) 50%, rgba(120,53,15,0.3) 100%);
+  background-size: 200% 100%;
+  border-bottom-color: rgba(252,211,77,0.2);
+}
+
+/* Glass nav */
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.85);
+}
+.dark .glass { background: rgba(0, 0, 0, 0.75); }
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.badge-dot { width: 6px; height: 6px; border-radius: 50%; }
+.badge-active   { color: #047857; background: #D1FAE5; }
+.badge-active   .badge-dot { background: #10B981; }
+.badge-new      { color: #1D4ED8; background: #DBEAFE; }
+.badge-new      .badge-dot { background: #3B82F6; }
+.badge-pending  { color: #B45309; background: #FEF3C7; }
+.badge-pending  .badge-dot { background: #F59E0B; }
+.badge-ended    { color: #475569; background: #E2E8F0; }
+.badge-ended    .badge-dot { background: #94A3B8; }
+.badge-info     { color: #6D28D9; background: #EDE9FE; }
+.badge-info     .badge-dot { background: #8B5CF6; }
+.dark .badge-active   { color: #6EE7B7; background: #064E3B; }
+.dark .badge-new      { color: #93C5FD; background: #1E3A8A; }
+.dark .badge-pending  { color: #FCD34D; background: #78350F; }
+.dark .badge-ended    { color: #94A3B8; background: #1E293B; }
+.dark .badge-info     { color: #C4B5FD; background: #4C1D95; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
