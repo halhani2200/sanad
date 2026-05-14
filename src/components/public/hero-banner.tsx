@@ -4,12 +4,19 @@ import { Heart, ArrowLeft, Sparkles, Users, Award } from "lucide-react";
 export function HeroBanner() {
   return (
     <section className="relative h-56 sm:h-64 overflow-hidden">
-      {/* Background gradient + pattern */}
-      <div className="absolute inset-0 gradient-brand"></div>
+      {/* Multi-tone gradient: emerald → with hint of amber + rose */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(135deg, #064E3B 0%, #047857 30%, #059669 60%, #B45309 130%)",
+        }}
+      ></div>
 
-      {/* Decorative circles */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full -translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-amber-400/20 rounded-full translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+      {/* Decorative warm circles */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-amber-400/15 rounded-full -translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-rose-400/15 rounded-full translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+      <div className="absolute top-1/2 left-1/2 w-56 h-56 bg-amber-300/10 rounded-full blur-3xl"></div>
 
       {/* SVG pattern */}
       <svg

@@ -157,6 +157,73 @@ body {
 .dark .badge-ended    { color: #94A3B8; background: #1E293B; }
 .dark .badge-info     { color: #C4B5FD; background: #4C1D95; }
 
+/* ============== DOMAIN COLOR SYSTEM ==============
+   Each charity service area has its own semantic color.
+   Use these for: section backgrounds, cards, icons, badges.
+*/
+
+/* Donations · trust · primary brand */
+.domain-donations { --domain: 4 120 87; --domain-bg: #ECFDF5; --domain-fg: #047857; }
+.dark .domain-donations { --domain-bg: rgba(4, 120, 87, 0.15); --domain-fg: #6EE7B7; }
+
+/* Orphans + sponsorships · warm protective blue */
+.domain-orphans { --domain: 29 78 216; --domain-bg: #EFF6FF; --domain-fg: #1D4ED8; }
+.dark .domain-orphans { --domain-bg: rgba(29, 78, 216, 0.15); --domain-fg: #93C5FD; }
+
+/* Families + aid · warm amber */
+.domain-aid { --domain: 217 119 6; --domain-bg: #FFFBEB; --domain-fg: #B45309; }
+.dark .domain-aid { --domain-bg: rgba(217, 119, 6, 0.15); --domain-fg: #FCD34D; }
+
+/* Education · calm violet */
+.domain-edu { --domain: 109 40 217; --domain-bg: #F5F3FF; --domain-fg: #6D28D9; }
+.dark .domain-edu { --domain-bg: rgba(109, 40, 217, 0.15); --domain-fg: #C4B5FD; }
+
+/* Health · fresh teal */
+.domain-health { --domain: 13 148 136; --domain-bg: #F0FDFA; --domain-fg: #0D9488; }
+.dark .domain-health { --domain-bg: rgba(13, 148, 136, 0.15); --domain-fg: #5EEAD4; }
+
+/* Governance · refined gold */
+.domain-gov { --domain: 161 98 7; --domain-bg: #FEFCE8; --domain-fg: #A16207; }
+.dark .domain-gov { --domain-bg: rgba(161, 98, 7, 0.15); --domain-fg: #FDE68A; }
+
+/* Volunteer · warm rose */
+.domain-vol { --domain: 190 24 93; --domain-bg: #FFF1F2; --domain-fg: #BE185D; }
+.dark .domain-vol { --domain-bg: rgba(190, 24, 93, 0.15); --domain-fg: #FDA4AF; }
+
+/* Marriage fund · soft pink-rose */
+.domain-marriage { --domain: 219 39 119; --domain-bg: #FDF2F8; --domain-fg: #DB2777; }
+.dark .domain-marriage { --domain-bg: rgba(219, 39, 119, 0.15); --domain-fg: #F9A8D4; }
+
+/* Apply domain colors via utility classes */
+.domain-tile {
+  background: var(--domain-bg);
+  color: var(--domain-fg);
+}
+.domain-border { border-color: var(--domain-fg); }
+.domain-text { color: var(--domain-fg); }
+.domain-bg-strong { background: var(--domain-fg); color: white; }
+
+/* Soft section tints */
+.tint-emerald { background: linear-gradient(180deg, transparent 0%, rgba(16, 185, 129, 0.04) 100%); }
+.tint-blue    { background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.04) 100%); }
+.tint-amber   { background: linear-gradient(180deg, transparent 0%, rgba(245, 158, 11, 0.05) 100%); }
+.tint-violet  { background: linear-gradient(180deg, transparent 0%, rgba(139, 92, 246, 0.04) 100%); }
+.tint-rose    { background: linear-gradient(180deg, transparent 0%, rgba(244, 63, 94, 0.04) 100%); }
+
+.dark .tint-emerald { background: linear-gradient(180deg, transparent 0%, rgba(16, 185, 129, 0.06) 100%); }
+.dark .tint-blue    { background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.06) 100%); }
+.dark .tint-amber   { background: linear-gradient(180deg, transparent 0%, rgba(245, 158, 11, 0.07) 100%); }
+.dark .tint-violet  { background: linear-gradient(180deg, transparent 0%, rgba(139, 92, 246, 0.06) 100%); }
+.dark .tint-rose    { background: linear-gradient(180deg, transparent 0%, rgba(244, 63, 94, 0.06) 100%); }
+
+/* Warm/cool gradients for visual variety */
+.grad-warm-orphan { background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #60A5FA 100%); }
+.grad-warm-aid    { background: linear-gradient(135deg, #92400E 0%, #D97706 50%, #FBBF24 100%); }
+.grad-warm-edu    { background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 50%, #A78BFA 100%); }
+.grad-warm-health { background: linear-gradient(135deg, #0F766E 0%, #14B8A6 50%, #5EEAD4 100%); }
+.grad-warm-vol    { background: linear-gradient(135deg, #9F1239 0%, #E11D48 50%, #FB7185 100%); }
+.grad-warm-marriage { background: linear-gradient(135deg, #831843 0%, #DB2777 50%, #F9A8D4 100%); }
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

@@ -136,11 +136,17 @@ export default function GovernancePage() {
 
   return (
     <>
-      {/* Compact hero with last-updated banner */}
+      {/* Compact hero — gold/governance tone */}
       <section className="relative h-44 sm:h-48 overflow-hidden">
-        <div className="absolute inset-0 gradient-brand"></div>
-        <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-amber-400/20 rounded-full translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, #064E3B 0%, #047857 35%, #A16207 90%)",
+          }}
+        ></div>
+        <div className="absolute top-0 left-0 w-64 h-64 bg-amber-300/15 rounded-full -translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-yellow-400/15 rounded-full translate-y-1/2 translate-x-1/2 blur-2xl"></div>
 
         <div className="relative h-full max-w-6xl mx-auto px-6 sm:px-8 flex items-center">
           <div className="text-white">
