@@ -45,11 +45,11 @@ export function PublicSidebar() {
         className="px-4 py-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center gap-3"
       >
         <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center text-white font-bold shadow-lg flex-shrink-0">
-          س
+          ص
         </div>
         <div className="min-w-0">
-          <div className="text-sm font-bold">سَنَد</div>
-          <div className="text-[10px] text-zinc-500 truncate">منصة الجمعيات</div>
+          <div className="text-sm font-bold leading-tight">جمعية الصفا</div>
+          <div className="text-[10px] text-zinc-500 truncate">للخدمات الاجتماعية بصفوى</div>
         </div>
       </Link>
 
@@ -95,6 +95,10 @@ export function PublicSidebar() {
         <p className="text-[10px] text-zinc-500 text-center mt-2 leading-relaxed">
           عطاؤك يصنع فرقاً حقيقياً
         </p>
+        <div className="mt-3 pt-2 border-t border-zinc-100 dark:border-zinc-800 text-center">
+          <span className="text-[9px] text-zinc-400">مدعوم بمنصة</span>{" "}
+          <span className="text-[9px] font-bold text-emerald-700 dark:text-emerald-400">سَنَد</span>
+        </div>
       </div>
     </aside>
   );

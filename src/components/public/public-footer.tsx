@@ -8,17 +8,22 @@ export function PublicFooter() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center text-white font-bold">
-                س
+                ص
               </div>
               <div>
-                <div className="font-semibold text-white">سَنَد</div>
-                <div className="text-xs text-zinc-400">منصة الجمعيات الخيرية</div>
+                <div className="font-semibold text-white">جمعية الصفا الخيرية</div>
+                <div className="text-xs text-zinc-400">للخدمات الاجتماعية بصفوى</div>
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed mb-4 max-w-md">
-              منصة موحّدة لإدارة الجمعيات الخيرية في المملكة العربية السعودية.
-              موقع عام، متجر تبرعات، ونظام إداري متكامل.
+              منذ 1407هـ، نخدم الأسر المحتاجة في صفوى والقطيف بشفافية كاملة.
+              كل ريال يصل لمستحقّه.
             </p>
+            <div className="text-xs text-zinc-500 space-y-1">
+              <div>📱 0136643028</div>
+              <div>📧 info@alsafa-charity.org.sa</div>
+              <div>📍 صفوى · المنطقة الشرقية · المملكة العربية السعودية</div>
+            </div>
           </div>
 
           <div>
@@ -47,10 +52,17 @@ export function PublicFooter() {
         </div>
 
         <div className="pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
-          <div>© 1447هـ · سَنَد · جميع الحقوق محفوظة</div>
-          <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full live-dot"></span>
-            <span>نموذج تجريبي · v0.1</span>
+          <div>© 1447هـ · جمعية الصفا الخيرية بصفوى · جميع الحقوق محفوظة</div>
+          <div className="flex items-center gap-3">
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full live-dot"></span>
+              <span>نموذج تجريبي · v0.1</span>
+            </span>
+            <span className="text-zinc-600">·</span>
+            <span>
+              مدعوم بمنصة{" "}
+              <span className="font-bold text-emerald-400">سَنَد</span>
+            </span>
           </div>
         </div>
       </div>

@@ -279,10 +279,11 @@ export default function HomePage() {
         <div className="bg-gradient-to-l from-emerald-50 via-amber-50 to-emerald-50 dark:from-emerald-950/30 dark:via-amber-950/30 dark:to-emerald-950/30 border border-emerald-200 dark:border-emerald-900 rounded-2xl p-6 sm:p-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
             <div className="md:col-span-2">
-              <h2 className="text-xl font-bold mb-2">لماذا التبرع من خلال سَنَد؟</h2>
+              <h2 className="text-xl font-bold mb-2">لماذا التبرع لجمعية الصفا؟</h2>
               <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-                منصة موحّدة آمنة، تبرع يصل لمستحقيه بشفافية كاملة. إيصال زاتكا فوري،
-                تتبّع لحظي، وتقارير سنوية مُدقّقة.
+                39 سنة من الخدمة الاجتماعية في صفوى والقطيف. تبرعك يصل لمستحقيه
+                بشفافية كاملة، مع إيصال زاتكا فوري، تتبّع لحظي، وتقارير سنوية
+                مُدقّقة.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-zinc-900 rounded-md text-xs font-medium border border-zinc-200 dark:border-zinc-700">

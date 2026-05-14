@@ -18,9 +18,9 @@ export function PublicTopbar() {
           </button>
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg gradient-brand flex items-center justify-center text-white font-bold text-sm">
-              س
+              ص
             </div>
-            <span className="text-sm font-bold">سَنَد</span>
+            <span className="text-sm font-bold">جمعية الصفا</span>
           </Link>
         </div>
 

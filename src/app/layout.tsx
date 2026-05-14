@@ -10,8 +10,8 @@ const arabic = IBM_Plex_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "سَنَد · منصة الجمعيات الخيرية",
-  description: "منصة موحّدة لإدارة الجمعيات الخيرية: موقع عام، متجر تبرعات، ونظام إداري داخلي.",
+  title: "جمعية الصفا الخيرية للخدمات الاجتماعية بصفوى",
+  description: "جمعية خيرية مرخّصة في صفوى، المنطقة الشرقية. كفالات أيتام، إعانة أسر، حملات موسمية، وتقارير شفافة منذ 1407هـ.",
 };
 
 export default function RootLayout({
